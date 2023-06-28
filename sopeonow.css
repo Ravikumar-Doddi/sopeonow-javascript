@@ -1,0 +1,165 @@
+.demo-cont {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-cont {
+  display: flex;
+}
+
+.child-sub {
+  display: flex;
+  justify-content: space-between;
+  font-family: "arial";
+  background-image: linear-gradient(to right, #ffc0c0, #fffae0);
+
+  background-color: #f17373;
+  padding: 10px;
+}
+
+.ethan {
+  font-size: 17px;
+}
+
+.ethan-cont {
+  margin-left: 8px;
+}
+
+.profile {
+  height: 40px;
+  width: 40px;
+}
+
+.patient-id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.beds-cont-lg {
+  padding: 10px;
+  width: 100%;
+}
+
+.beds-cont {
+  padding: 10px;
+  width: 33%;
+}
+
+.number {
+  background-color: #ffc0c0;
+  padding: 3px;
+  width: 100%;
+}
+
+.id-text {
+  color: #888888;
+}
+
+.no-beds {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.beds-main-cont {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.head {
+  color: #f17373;
+}
+
+.step {
+  position: relative;
+  padding: 10px;
+  min-height: 1em;
+  color: gray;
+}
+
+.title {
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+.caption {
+  font-size: 0.8em;
+}
+
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+
+.circle {
+  background: #35db61;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
+}
+.circle2 {
+  background: gray;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
+}
+.stepper-cont {
+  padding: 10px;
+}
+.circle:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.step:last-child .circle:after {
+  display: none;
+}
+
+.step.step-active {
+  color: #4285f4;
+}
+
+.step.step-active .circle {
+  background-color: #4285f4;
+}
